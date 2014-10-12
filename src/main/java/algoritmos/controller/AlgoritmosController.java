@@ -29,6 +29,7 @@ public class AlgoritmosController {
             try {
                 cantidad = theView.getCantidad();
                 theModel.generarElementos(cantidad);
+                theView.setGraph();
             } catch (NumberFormatException exception) {
                 System.out.println(exception);
                 theView.displayErrorMessage("Inserte un Integer");
